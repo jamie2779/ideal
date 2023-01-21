@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="worldcupTitle">복소수 월드컵</h1>
+
+
+    <div class="startForm">
+        <h3>라운드를 선택해주세요</h3>
+        <select name="roundSelect" id="roundSelect">
+            <option value="32">32강</option>
+            <option value="16">16강</option>
+            <option value="8">8강</option>
+            <option value="4">4강</option>
+        </select>
+        <button id="startBtn">시작하기</button>
+    </div>
+
+    <div class="inGame hidden">
+        <div class="img1"><h1 id="title1">사진제목1</h1></div>
+        <div class="img2"><h1 id="title2">사진제목2</h1></div>
+    </div>
+
+    <div class="ending hidden">
+        <h1 style="font-size:50px; color:gold; margin-bottom:0px; margin-top:-5px;">우승자!!</h1>
+        <button style="float:right; margin-right:10%; width:200px; height: 40px;" onclick="window.location.reload()">다시하기</button>
+
+        <div class="winnerImg">
+            <h1 id="winnerTitle">사진제목1</h1>
+        </div>
+    </div>
+
+
+
+
+    <script type="module" src="./index.js"></script>
+</body>
+
+
+<style>
+    #title1, #title2{
+        color:white;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    body{
+        text-align:center;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .img1{
+        float:left;
+        width:50%;
+        height: 80vh;
+        background-size:cover;
+        background-image: url('./img/1.jpg');
+    }
+
+    .img2{
+        float:right;
+        width:50%;
+        height: 80vh;
+        background-size:cover;
+        background-image: url('./img/2.png');
+    }
+
+    .winnerImg{
+        float:left;
+        margin-left:25%;
+        width:50%;
+        height: 80vh;
+        background-size:cover;
+        background-image: url('./img/2.png');
+    }
+
+    .seleted{
+        margin-left:25%;
+        margin-right:25%;
+        transition: all 1s;
+    }
+
+
+
+
+
+
+</style>
+
+</html>
